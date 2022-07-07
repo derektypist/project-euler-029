@@ -26,11 +26,19 @@ function getNumberInfo() {
 */
 function distinctPowers(n) {
     let powers = [];
-    for (let i=BigInt(2);i<=BigInt(n);i++) {
-        for (let j=BigInt(2);j<=BigInt(n);j++) {
-            powers.push(i**j);
+    /*
+        Need to Use BigInt in the iterators a and b so that
+        distinctPowers(100) returns 9183 and distinctPowers(50) returns 2184.  If BigInt was not used, distinctPowers(100) would return 9220 and 
+        distinctPowers(50) would return 2190.
+    */
+        
+    for (let a=BigInt(2);a<=BigInt(n);a++) {
+        for (let b=BigInt(2);b<=BigInt(n);b++) {
+            powers.push(a**b);
         }
     }
+
+    // Remove duplicates and calculate the length of the distinct terms
     let distinctPower = [...new Set(powers)];
     return distinctPower.length;
 }
