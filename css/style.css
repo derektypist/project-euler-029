@@ -17,12 +17,7 @@ h2 {
     font-size: 1.25rem;
 }
 
-.powers {
-    padding-left: 1.6rem;
-    color: #D2386C;
-}
-
-.terms {
+.powers, .terms {
     color: #D2386C;
 }
 
