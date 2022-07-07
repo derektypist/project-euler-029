@@ -38,7 +38,7 @@ function distinctPowers(n) {
         }
     }
 
-    // Remove duplicates and calculate the length of the distinct terms
+    // Remove duplicates and calculate the number of distinct terms
     let distinctPower = [...new Set(powers)];
     return distinctPower.length;
 }
