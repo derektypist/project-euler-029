@@ -23,6 +23,13 @@ Enter a whole number between 2 and 100 in the input field and click on the Submi
 
 **User Stories**
 
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 2 or greater than 100
+- Entering a number, but it is not an integer
+
 As a user, I expect the function `distinctPowers(15)` to return a number.
 
 As a user, I expect the function `distinctPowers(15)` to return 177.
@@ -35,5 +42,5 @@ As a user, I expect the function `distinctPowers(30)` to return 755.
 
 **Information Architecture**
 
-The function `distinctPowers(n)` returns a number, where `n` is a number.
+The function `distinctPowers(n)` returns a number, where `n` is a number between 2 and 100.
 
