@@ -25,13 +25,15 @@ function getNumberInfo() {
     distinctPowers(30) returns 755
 */
 function distinctPowers(n) {
-    let powers = {};
+    let powers = new Set();
+    let currentPower = 0;
     for (let i=2;i<=n;i++) {
         for (let j=2;j<=n;j++) {
-            powers[Math.pow(i,j)] = true;
+            currentPower = Math.pow(i,j);
+            powers.add(currentPower);
         }
     }
-    return Object.keys(powers).length;
+    return powers.size;
 }
 
 // Function to Clear Information
