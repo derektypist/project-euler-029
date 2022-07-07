@@ -26,10 +26,10 @@ function getNumberInfo() {
 */
 function distinctPowers(n) {
     let powers = new Set();
-    let currentPower = 0;
+    let currentPower = BigInt(0);
     for (let i=2;i<=n;i++) {
         for (let j=2;j<=n;j++) {
-            currentPower = Math.pow(i,j);
+            currentPower = BigInt(Math.pow(i,j));
             powers.add(currentPower);
         }
     }
