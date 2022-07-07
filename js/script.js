@@ -33,3 +33,9 @@ function distinctPowers(n) {
     }
     return Object.keys(powers).length;
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("numinfo").innerHTML = txt;
+}
