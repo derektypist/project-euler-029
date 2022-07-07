@@ -28,11 +28,11 @@ function distinctPowers(n) {
     let powers = [];
     for (let i=2;i<=n;i++) {
         for (let j=2;j<=n;j++) {
-            let term = BigInt(Math.pow(i,j));
-            if (powers.indexOf(term)===-1) powers.push(term);
+            powers.push(i**j);
         }
     }
-    return powers.length;
+    let distinctPower = [...new Set(powers)];
+    return distinctPower.length;
 }
 
 // Function to Clear Information
