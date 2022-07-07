@@ -28,7 +28,7 @@ function distinctPowers(n) {
     let powers = {};
     for (let i=2;i<=n;i++) {
         for (let j=2;j<=n;j++) {
-            powers[BigInt(Math.pow(i,j))] = true;
+            powers[Math.pow(i,j)] = true;
         }
     }
     return Object.keys(powers).length;
