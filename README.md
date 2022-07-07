@@ -50,7 +50,7 @@ Allows the user to enter a number, as well as getting the number of distinct ter
 
 ## Technologies
 
-Uses HTML5, CSS3, JavaScript (including BigInt), Bootstrap 5.2.0-Beta1 and Google Fonts.
+Uses HTML5, CSS3, JavaScript with BigInt, Bootstrap 5.2.0-Beta1 and Google Fonts.
 
 ## Testing
 
