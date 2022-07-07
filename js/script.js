@@ -26,9 +26,9 @@ function getNumberInfo() {
 */
 function distinctPowers(n) {
     let powers = [];
-    for (let i=2;i<=n;i++) {
-        for (let j=2;j<=n;j++) {
-            powers.push(BigInt(Math.pow(i,j)));
+    for (let i=BigInt(2);i<=BigInt(n);i++) {
+        for (let j=BigInt(2);j<=BigInt(n);j++) {
+            powers.push(i**j);
         }
     }
     let distinctPower = [...new Set(powers)];
