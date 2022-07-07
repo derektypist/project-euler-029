@@ -64,7 +64,7 @@ Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-029) at t
 
 ### Content
 
-Written by me.
+Written by me.  However, went to thread 29 in Project Euler to find the code in JavaScript from epaolinos who suggested the BigInt idea.
 
 ### Acknowledgements
 
